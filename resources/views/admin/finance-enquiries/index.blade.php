@@ -4,9 +4,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
-        <p class="text-right">
-              {!! link_to_route('admin.enquiries.create', 'New FAQ') !!}
-          </p>
+      
         @if (Session::has('message'))
           <div class="alert alert-success alert-dismissible" role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -20,9 +18,8 @@
                 <thead>
                     <tr>
                         <th>Sent</th>         
-                        <th>Name</th>          
-                        <th>Telephone</th>
-                        <th>Email</th>
+                        <th>Name</th>    
+                        <th>City</th>          
                         <th class="text-center">Delete</th>                   
                     </tr>
                 </thead>
@@ -42,10 +39,9 @@
             "serverSide": true,
             "ajax": "{{ Config::get('app.url') }}/admin/finance-enquiries/all",
             "columns": [   
-                {data: 'created_at', name: 'created_at', orderable: false},             
-                {data: 'name', name: 'name'},               
-                {data: 'telephone', name: 'telephone'},
-                {data: 'email', name: 'email'},
+                {data: 'created_at', name: 'created_at', searchable: false},             
+                {data: 'name', name: 'name'},   
+                {data: 'city', name: 'cities.city'},             
                 {data: 'delete', searchable: false, name: 'delete', orderable: false, class: 'text-center'}       
             ]
         });
