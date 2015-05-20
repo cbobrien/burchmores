@@ -1,0 +1,6 @@
+Notes for Fabien
+
+- Please do not duplicate css.
+- Dont use negative margin - only when really neccessary
+- Dont space Divs with <br> tags. Use margin and padding
+- Do not use inline styles

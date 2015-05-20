@@ -1,0 +1,28 @@
+5:15 wakeup
+5:45 left home
+
+6:30 Got to station
+
+6:40 Train left
+7:04 Train arrived
+bus trip 16 min
+7:20 Got to work
+
+Train
+40 min 
+
+Bus
+20 min
+
+Drive 
+30 min
+
+Leave at 6:30 to get there at 8 (1 hour 30 min)
+Wake up 5:45
+Alarm 5:30
+
+
+Catch the 7:16 train
+
+
+#FAA634
