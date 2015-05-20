@@ -46,7 +46,7 @@
                 <a href="about-us">About Us</a>
               </li>              
               <li>
-                <a href="finances-and-warranties">Finances &amp; Warranties</a>
+                <a href="finances-and-warranties">Finance &amp; Warranties</a>
               </li>             
               <li>
                 <a href="faq">FAQs</a>
@@ -85,7 +85,7 @@
 			                  <li><a href="sell-your-car">Sell Your Car</a></li>                  
 			                  <li><a href="how-to-register">How to Register</a></li>  
 			                  <li><a href="about-us">About Us</a></li>
-			                  <li><a href="finances-and-warranties">Finances &amp; Warranties</a></li>
+			                  <li><a href="finances-and-warranties">Finance &amp; Warranties</a></li>
 			                  <li><a href="faq">FAQs</a></li>                 
 			                  <li><a href="contact-us">Contact Us</a></li>                 
 			                </ul>
@@ -105,7 +105,7 @@
                         <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">More <span class="caret"></span></a>
                           <ul class="dropdown-menu pull-right" role="menu">
-                            <li><a href="finances-and-warranties">Finances &amp; Warranties</a></li>
+                            <li><a href="finances-and-warranties">Finance &amp; Warranties</a></li>
                             <li><a href="faq">FAQs</a></li>                 
                             <li><a href="contact-us">Contact Us</a></li>  
                           </ul>
@@ -149,7 +149,7 @@
                     <a href="" target="_blank" class="social-button">
                       <i class="fa fa-pinterest-p fa-2x"></i>
                     </a>                       
-                  </div><!-- //.social-container --> 
+                  </div><!-- //.social-container -->
 								</div><!-- //.col-md-6 -->
 								<div class="col-md-6 footer-nav">
 									<a href="sitemap">SiteMap</a> | 

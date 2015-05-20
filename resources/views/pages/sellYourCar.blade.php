@@ -6,8 +6,6 @@
 
 	<h1 class="page-header">Sell Your Car</h1>
 
-	<h2>Contact Us</h2>
-
 	<!-- {!! Form::open(['route' => 'admin.auctions.store', 'class' => 'form-horizontal', 'files' => true]) !!}				
 
 		<div class="form-group">

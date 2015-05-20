@@ -28,7 +28,7 @@
 	<br />
 	Lionel Roux - E-mail: <a href="mailto:lionelr@mcmotor.co.za">lionelr@mcmotor.co.za</a>	
 
-	<h1>McCarthy Insurance Products</h1>
+	<h1>Bidvest Insurance Products</h1>
 
 	We offer a host of value added products promoting 'Peace of Mind' motoring.
 

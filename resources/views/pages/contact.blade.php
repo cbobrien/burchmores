@@ -38,7 +38,7 @@
           <h3>Darryl Jacobson</h3>
         </div><!-- //.col-md-4 -->
         <div class="col-md-8">
-           E-mail: <a href="mailto:DarrylJ@mcmotor.co.za">DarrylJ@mcmotor.co.za</a>
+           E-mail: <a href="mailto:DarrylJ@mcmotor.co.za">Click here</a>
         </div><!-- //.col-md-8 -->
       </div><!-- //.row -->           
       <div class="row">
@@ -46,7 +46,7 @@
           <h3>Lionel Roux</h3>
         </div><!-- //.col-md-4 -->
         <div class="col-md-8">
-           E-mail: <a href="mailto:lionelr@mcmotor.co.za">lionelr@mcmotor.co.za</a>
+           E-mail: <a href="mailto:lionelr@mcmotor.co.za">Click here</a>
         </div><!-- //.col-md-8 -->
       </div><!-- //.row -->       
       <div class="row">
@@ -137,7 +137,7 @@
           <h3>Darryl Jacobson</h3>
         </div><!-- //.col-md-4 -->
         <div class="col-md-8">
-           E-mail: <a href="mailto:DarrylJ@mcmotor.co.za">DarrylJ@mcmotor.co.za</a>
+           E-mail: <a href="mailto:DarrylJ@mcmotor.co.za">Click here</a>
         </div><!-- //.col-md-8 -->
       </div><!-- //.row -->           
       <div class="row">
@@ -145,7 +145,7 @@
           <h3>Lee-Ann Swanepoel</h3>
         </div><!-- //.col-md-4 -->
         <div class="col-md-8">
-           E-mail: <a href="mailto:lee-AnnS@mcmotor.co.za">Lee-AnnS@mcmotor.co.za</a>
+           E-mail: <a href="mailto:lee-AnnS@mcmotor.co.za">Click here</a>
         </div><!-- //.col-md-8 -->
       </div><!-- //.row -->       
       <div class="row">
@@ -234,7 +234,7 @@
           <h3>Darryl Jacobson</h3>
         </div><!-- //.col-md-4 -->
         <div class="col-md-8">
-           E-mail: <a href="mailto:DarrylJ@mcmotor.co.za">DarrylJ@mcmotor.co.za</a>
+           E-mail: <a href="mailto:DarrylJ@mcmotor.co.za">Click here</a>
         </div><!-- //.col-md-8 -->
       </div><!-- //.row -->           
       <div class="row">
@@ -242,7 +242,7 @@
           <h3>Lionel Roux</h3>
         </div><!-- //.col-md-4 -->
         <div class="col-md-8">
-           E-mail: <a href="mailto:machielA@mcmotor.co.za">MachielA@mcmotor.co.za</a>
+           E-mail: <a href="mailto:machielA@mcmotor.co.za">Click here</a>
         </div><!-- //.col-md-8 -->
       </div><!-- //.row -->       
       <div class="row">
