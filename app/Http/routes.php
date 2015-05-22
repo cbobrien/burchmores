@@ -64,6 +64,8 @@ Route::post('/sell-you-car/send', ['as' => 'sell-your-car.send', 'uses' => 'Form
   Route::get('/admin/finance-enquiries/all', 'Admin\FinanceEnquiryController@ajaxAll');
   Route::resource('/admin/finance-enquiries', 'Admin\FinanceEnquiryController', ['except' => ['create', 'store', 'edit', 'update']]);
 
+  Route::get('/admin/sell-cars/all', 'Admin\SellCarsController@ajaxAll');
+  Route::resource('/admin/sell-cars', 'Admin\SellCarsController', ['except' => ['create', 'store', 'edit', 'update']]);
   // Route::get('/admin/content/all', 'Admin\ContentController@ajaxAll');
   // Route::get('/admin/content/{page}', 'Admin\ContentController@getPage');
 
