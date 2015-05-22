@@ -16,11 +16,18 @@
 					{!! Form::open(['route' => 'admin.cities.store', 'class' => 'form-horizontal', 'files' => true]) !!}					
 
 						<div class="form-group">
-							<label for="question" class="col-md-4 control-label">City</label>
+							<label for="city" class="col-md-4 control-label">City</label>
 							<div class="col-md-6">
 								{!! Form::text('city', null, ['class' => 'form-control', 'id' => 'richtext']) !!}
 							</div>
-						</div>				
+						</div>		
+
+						<div class="form-group">
+							<label for="order" class="col-md-4 control-label">Order</label>
+							<div class="col-md-6">
+								{!! Form::input('number', 'order', null, []) !!}
+							</div>
+						</div>		
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">

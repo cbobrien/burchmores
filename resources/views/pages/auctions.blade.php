@@ -18,68 +18,135 @@
 
 	<div class="row">
 
-		<div class="col-md-4 timer-spacer">
-			<div class="timer-container">
-				<div class="header">
-					JOHANNESBURG:
-				</div><!-- //.header -->
-				<div class="timer-inner">
-					<div id="countdown-jhb" class="digits">
-						00:00:00
-					</div><!-- //.digits --> 
+		@foreach ($cities as $city)
 
-					DAYS HOURS MINUTES
-				</div><!-- //.timer-inner -->
-				<a href="auction" class="button">
-					CLICK HERE FOR DETAILS
-				</a>
-			</div><!-- //.timer-container -->
-			<a href="auction" id="countdown-jhb-1" class="future-auction">Auction Thereafter: Days : Hours : Minutes</a>
-			<a href="auction" id="countdown-jhb-2" class="future-auction">Auction Thereafter: Days : Hours : Minutes</a>
-			<a href="auction" id="countdown-jhb-3" class="future-auction">Auction Thereafter: Days : Hours : Minutes</a>
-		</div><!-- //.col-md-4 -->
-		<div class="col-md-4 timer-spacer">
-			<div class="timer-container">
-				<div class="header">
-					CAPE TOWN:
-				</div><!-- //.header -->
-				<div class="timer-inner">
-					<div id="countdown-cpt" class="digits">
-						00:00:00
-					</div><!-- //.digits --> 				
+			@if ($city->city == 'Johannesburg')
 
-					DAYS HOURS MINUTES
-				</div><!-- //.timer-inner -->
-				<a href="auction" class="button">
-					CLICK HERE FOR DETAILS
-				</a>
-			</div><!-- //.timer-container -->
-			<a href="auction" id="countdown-cpt-1" class="future-auction">Auction Thereafter: Days : Hours : Minutes</a>
-			<a href="auction" id="countdown-cpt-2" class="future-auction">Auction Thereafter: Days : Hours : Minutes</a>
-			<a href="auction" id="countdown-cpt-3" class="future-auction">Auction Thereafter: Days : Hours : Minutes</a>			
-		</div><!-- //.col-md-4 -->
-		<div class="col-md-4 timer-spacer">
-			<div class="timer-container">
-				<div class="header">
-					DURBAN:
-				</div><!-- //.header -->
-				<div class="timer-inner">
-					<div id="countdown-dbn" class="digits">
-						00:00:00
-					</div><!-- //.digits --> 
+				<div class="col-md-4 timer-spacer">											
 
-					DAYS HOURS MINUTES
-				</div><!-- //.timer-inner -->
-				<a href="auction" class="button">
-					CLICK HERE FOR DETAILS
-				</a>
-			</div><!-- //.timer-container -->
-			<a href="auction" id="countdown-dbn-1" class="future-auction">Auction Thereafter: Days : Hours : Minutes</a>
-			<a href="auction" id="countdown-dbn-2" class="future-auction">Auction Thereafter: Days : Hours : Minutes</a>
-			<a href="auction" id="countdown-dbn-3" class="future-auction">Auction Thereafter: Days : Hours : Minutes</a>			
-		</div><!-- //.col-md-4 -->
-	</div><!-- //.row -->
+						@foreach ($city->locations as $location)
 
+							<?php $i = 1; ?>
+
+							@foreach ($location->auctions as $auction)
+
+								@if ($i == 1)
+
+									<div class="timer-container">
+										<div class="header">
+											Johannesburg
+										</div>
+										<div class="timer-inner">
+											<div id="countdown-jhb" class="digits">
+												{{ $auction->auction_date }}
+											</div>
+										</div>
+										<a href="/auction/{{ $auction->id }}" class="button">
+											CLICK HERE FOR DETAILSss
+										</a>
+									</div>
+								@else
+									<a href="/auction/{{ $auction->id }}" id="countdown-jhb-1" class="future-auction">{{ $auction->auction_date }}</a>
+								@endif
+								
+								@if ($i == 4)
+									break;
+								@endif
+
+								<?php $i++; ?>
+
+							@endforeach
+							
+						@endforeach
+				</div>
+
+			@endif
+
+			@if ($city->city == 'Cape Town')
+
+				<div class="col-md-4 timer-spacer">											
+
+						@foreach ($city->locations as $location)
+
+							<?php $i = 1; ?>
+
+							@foreach ($location->auctions as $auction)
+
+								@if ($i == 1)
+
+									<div class="timer-container">
+										<div class="header">
+											Cape Town
+										</div>
+										<div class="timer-inner">
+											<div id="countdown-jhb" class="digits">
+												{{ $auction->auction_date }}
+											</div>
+										</div>
+										<a href="/auction/{{ $auction->id }}" class="button">
+											CLICK HERE FOR DETAILS
+										</a>
+									</div>
+								@else
+									<a href="/auction/{{ $auction->id }}" id="countdown-jhb-1" class="future-auction">{{ $auction->auction_date }}</a>
+								@endif
+								
+								<?php if($i == 4)break; ?>
+								
+								
+								<?php $i++; ?>
+
+							@endforeach							
+						@endforeach
+
+				</div>
+
+			@endif
+
+			@if ($city->city == 'Durban')
+
+				<div class="col-md-4 timer-spacer">											
+
+						@foreach ($city->locations as $location)
+
+							<?php $i = 1; ?>
+
+							@foreach ($location->auctions as $auction)
+
+								@if ($i == 1)
+
+									<div class="timer-container">
+										<div class="header">
+											Durban
+										</div>
+										<div class="timer-inner">
+											<div id="countdown-jhb" class="digits">
+												{{ $auction->auction_date }}
+											</div>
+										</div>
+										<a href="/auction/{{ $auction->id }}" class="button">
+											CLICK HERE FOR DETAILS
+										</a>
+									</div>
+								@else
+									<a href="/auction/{{ $auction->id }}" id="countdown-jhb-1" class="future-auction">{{ $auction->auction_date }}</a>
+								@endif
+								
+								@if ($i == 4)
+									break;
+								@endif
+								
+								<?php $i++; ?>
+
+							@endforeach
+						@endforeach
+				</div>
+
+			@endif
+
+		@endforeach
+
+	
 	<div class="row">
 		<div class="col-md-12">
 			<h1 class="page-header m-t-40">What Do People Who've Bought From Us Think?</h1>

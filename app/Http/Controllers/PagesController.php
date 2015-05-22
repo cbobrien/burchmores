@@ -53,8 +53,9 @@ class PagesController extends Controller {
 
   public function auctions()
   {
-    $cities = City::with('testimonials')->get();
-    return View::make('pages.auctions')->with([ "title"=>"Auctions", 'cities'=>$cities ]);
+    $cities = City::with('locations.auctions')->orderBy('order')->get();
+    // dd($cities);
+    return View::make('pages.auctions')->with([ "title" => "Auctions", 'cities' => $cities ]);
     // return View::make('pages.about')->with("title","About Us");
   }      
 
