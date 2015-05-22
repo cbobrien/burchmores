@@ -4,7 +4,7 @@
 
 <div class="relative white-container">
 
-	<h1>Privacy Statement</h1>
+	<h1 class="page-header">Privacy Statement</h1>
 
 	Burchmore is committed to protecting your privacy and developing technology that gives you the most powerful and safe online experience. This Statement of Privacy applies to the Burchmore Web site and governs data collection and usage. By using the Burchmore website, you consent to the data practices described in this statement.
 

@@ -4,7 +4,7 @@
 
 <div class="relative white-container">
 
-	<h1>Sitemap</h1>
+  <h1 class="page-header">Sitemap</h1>
 
   <ul>
     <li><a href="">Home</a></li>

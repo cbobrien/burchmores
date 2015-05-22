@@ -6770,6 +6770,10 @@ button.close {
 .fa.pull-right {
   margin-left: .3em; }
 
+html {
+  height: 100%;
+  background: #DCDDDF; }
+
 .relative {
   position: relative; }
 
@@ -6999,7 +7003,7 @@ footer#main-footer {
     text-align: center;
     width: 43px;
     height: 43px;
-    padding-top: 11px;
+    padding-top: 8px;
     transition: all 0.5s ease; }
   footer#main-footer a.social-button:hover {
     background: #004827; }
@@ -7050,6 +7054,12 @@ footer#main-footer {
     font-size: 16px;
     font-weight: bold; }
   .form-container input[type='text'], .form-container input[type='email'] {
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    color: #58595B; }
+  .form-container select {
     display: block;
     border: none;
     width: 100%;
