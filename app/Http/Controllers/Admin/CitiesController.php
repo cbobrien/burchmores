@@ -29,7 +29,7 @@ class CitiesController extends Controller {
 
 	public function edit(City $city)		
 	{
-		return View::make('admin.cities.edit')->with('city', $city);
+		return view('admin.cities.edit')->with('city', $city);
 	}
 
 	public function update(City $city, CityRequest $request)
@@ -47,7 +47,7 @@ class CitiesController extends Controller {
 	public function ajaxAll()
 	{
 
-		$cities = City::select(['id', 'city']);
+		$cities = City::select(['id', 'city'])->orderBy('order', 'asc');
 		 
 		     return Datatables::of($cities)
 		         ->addColumn('edit', '<a href="/admin/cities/{{$id}}/edit"><i class="fa fa-pencil-square-o"></i></a>')
@@ -55,7 +55,7 @@ class CitiesController extends Controller {
 		             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 		             <input name="_method" type="hidden" value="DELETE">             
 		             <a href="#" onclick="confirmSubmit(\'deleteForm{{$id}}\');"><i class="fa fa-trash-o"></i></a>
-		            </form>')
+		            </form>')		         
 		         ->make(true);		
 	}
 

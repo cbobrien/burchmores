@@ -27,6 +27,13 @@
 						</div>
 
 						<div class="form-group">
+							<label for="order" class="col-md-4 control-label">Order</label>
+							<div class="col-md-6">
+								{!! Form::input('number', 'order', $city->order, []) !!}
+							</div>
+						</div>
+
+						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
 								<button type="submit" class="btn btn-primary">Update</button>
 							</div>
