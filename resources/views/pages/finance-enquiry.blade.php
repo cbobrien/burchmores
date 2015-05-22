@@ -83,7 +83,7 @@
 								<input type="checkbox" class="terms-checkbox" name="terms" />
 							</div><!-- //.chechbox-container -->
 							
-								I have read and understand the terms and conditions and privacy statement of this website.
+								I have read and understand the <a target="_blank" href="terms">terms of use</a> and <a target="_blank" href="privacy">privacy statement</a> of this website.
 							
 						</div><!-- //.col-md-12 -->
 					</div><!-- //.row -->

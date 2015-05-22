@@ -7049,6 +7049,9 @@ footer#main-footer {
   background: #39b549;
   color: #fff;
   font-size: 14px; }
+  .form-container a {
+    color: #fff;
+    text-decoration: underline; }
   .form-container h3 {
     color: #fff;
     font-size: 16px;

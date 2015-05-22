@@ -18,9 +18,6 @@
 
 	<div class="row">
 
-
-
-
 		<div class="col-md-4 timer-spacer">
 			<div class="timer-container">
 				<div class="header">
@@ -101,7 +98,7 @@
 
 						@foreach ($city->testimonials as $testimonial)
 
-							{{ $testimonial->content }} 
+							{{ "<div class='testimonial-content'>" . $testimonial->content . "</div>" }} 
 							{{ trim($testimonial->name) != '' ? ' - ' : '' }}
 							{{ $testimonial->name }}
 							<br>
