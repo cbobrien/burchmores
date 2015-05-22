@@ -6,6 +6,114 @@
 
 	<h1 class="page-header">Sell Your Car</h1>
 
+	@include ('errors.list')
+
+	{!! Form::open(['route' => 'sell-your-car.send', 'files' => true]) !!}
+		<div class="form-group">
+			<label for="city_id">Region</label>
+			<div class="col-md-6">
+				{!! Form::select('city_id', [null => 'Please Select'] + $cities, null, ['class' => 'form-control']) !!}
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="first_name">First Name</label>			
+			{!! Form::text('first_name', null, ['class' => 'form-control']) !!}		
+		</div>   
+
+		<div class="form-group">
+			<label for="surname">Surname</label>			
+			{!! Form::text('surname', null, ['class' => 'form-control']) !!}		
+		</div>    
+
+		<div class="form-group">
+			<label for="surname">Contact Number</label>			
+			{!! Form::text('telephone', null, ['class' => 'form-control']) !!}		
+		</div>      
+
+ 		<div class="form-group">
+			<label for="surname">Email Address</label>			
+			{!! Form::email('email', null, ['class' => 'form-control']) !!}		
+		</div>  
+
+		<div class="form-group">
+			<label for="surname">Make</label>			
+			{!! Form::text('make', null, ['class' => 'form-control']) !!}		
+		</div> 
+
+		<div class="form-group">
+			<label for="surname">Model</label>			
+			{!! Form::text('model', null, ['class' => 'form-control']) !!}		
+		</div>  
+
+		<div class="form-group">
+			<label for="surname">Year</label>			
+			{!! Form::text('year', null, ['class' => 'form-control']) !!}		
+		</div> 
+
+		<div class="form-group">
+			<label for="surname">Mileage</label>			
+			{!! Form::text('mileage', null, ['class' => 'form-control']) !!}		
+		</div> 
+
+		<div class="form-group">
+			<label for="surname">Colour</label>			
+			{!! Form::text('colour', null, ['class' => 'form-control']) !!}		
+		</div> 
+
+		<div class="form-group">
+			<label for="surname">Registration</label>			
+			{!! Form::text('registration', null, ['class' => 'form-control']) !!}		
+		</div> 
+
+		<div class="form-group">
+			<label for="surname">Comments</label>			
+			{!! Form::textarea('comments', null, ['class' => 'form-control']) !!}		
+		</div>  
+
+		<div class="form-group">
+			<label for="image_path1">Pic 1</label>
+			<div>
+				{!! Form::file('image_path1') !!}
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="image_path2">Pic 2</label>
+			<div>
+				{!! Form::file('image_path2') !!}
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="image_path3">Pic 3</label>
+			<div>
+				{!! Form::file('image_path3') !!}
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="image_path4">Pic 4</label>
+			<div>
+				{!! Form::file('image_path4') !!}
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="image_path5">Pic 5</label>
+			<div>
+				{!! Form::file('image_path5') !!}
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="">
+				<button type="submit" class="btn btn-primary">Send</button>
+			</div>
+		</div>
+
+	{!! Form::close() !!}
+
 	<!-- {!! Form::open(['route' => 'admin.auctions.store', 'class' => 'form-horizontal', 'files' => true]) !!}				
 
 		<div class="form-group">
@@ -29,7 +137,7 @@
 		</div>
 	{!! Form::close() !!} -->
 
-	<div class="form-container">
+	{{-- <div class="form-container">
 		<form action="">
 			<div class="row">
 				<div class="col-md-12">
@@ -106,7 +214,7 @@
 				</div><!-- //.col-md-4 -->
 			</div><!-- //.row -->
 		</form>
-	</div><!-- //.form-container -->	
+	</div><!-- //.form-container -->	 --}}
 
 </div><!-- //.relative -->
 

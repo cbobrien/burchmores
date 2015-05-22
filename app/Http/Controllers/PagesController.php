@@ -92,7 +92,8 @@ class PagesController extends Controller {
   public function sellYourCar()
   {
     // return view('pages/about');
-    return View::make('pages.sellYourCar')->with("title","Sell your car");
+    $cities = City::lists('city', 'id');   
+    return View::make('pages.sellYourCar')->with(["title" => "Sell your car", 'cities' => $cities]);
   }  
 
   public function financesAndWarranties()

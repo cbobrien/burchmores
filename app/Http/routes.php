@@ -31,7 +31,7 @@ Route::get('/thank-you', ['as' => 'pages.thanks', 'uses' => 'PagesController@tha
 
 //front end forms
 Route::post('/finance-enquiry/send', ['as' => 'finance-enquiry.send', 'uses' => 'FormsController@financeEnquiry']);
-
+Route::post('/sell-you-car/send', ['as' => 'sell-your-car.send', 'uses' => 'FormsController@sellYourCar']);
 
 
 
