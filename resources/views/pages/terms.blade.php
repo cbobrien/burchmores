@@ -4,7 +4,7 @@
 
 <div class="relative white-container">
 
-	<h1>Terms Of Use</h1>
+	<h1 class="page-header">Terms Of Use</h1>
 
   <h2>AGREEMENT BETWEEN USER AND Burchmore</h2>
 
