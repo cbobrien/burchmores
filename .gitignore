@@ -3,3 +3,5 @@
 /config/app.php
 .env
 /resources/views/layouts/master.blade.php
+Gruntfile.js
+gulpfile.js
