@@ -23,10 +23,11 @@ class EnquiryRequest extends Request {
 	{
 		return [
 			"auction_id" => "required",
-			"First_name" => "required",
+			"first_name" => "required",
 			"surname" => "required",
+			"email" => "required|email",
 			"telephone" => "required",
-			"email" => "required"
+			"message" => 'required'
 		];
 	}
 

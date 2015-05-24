@@ -28,6 +28,7 @@ class RouteServiceProvider extends ServiceProvider {
 		$router->model('location', 'App\Location');
 		$router->model('testimonial', 'App\Testimonial');
 		$router->model('auctions', 'App\Auction');
+		$router->model('auction_id', 'App\Auction');
 		$router->model('enquiries', 'App\Enquiry');
 		$router->model('finance_enquiries', 'App\FinanceEnquiry');
 		$router->model('sell_cars', 'App\SellCar');

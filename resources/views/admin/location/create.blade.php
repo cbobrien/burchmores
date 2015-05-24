@@ -55,7 +55,21 @@
 							<div class="col-md-6">
 								{!! Form::text('telephone', null, ['class' => 'form-control']) !!}
 							</div>
-						</div>													
+						</div>	
+
+						<div class="form-group">
+							<label for="emails_to" class="col-md-4 control-label">Emails To</label>
+							<div class="col-md-6">
+								{!! Form::textarea('emails_to', null, ['class' => 'form-control']) !!}
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="emails_cc" class="col-md-4 control-label">Emails CC</label>
+							<div class="col-md-6">
+								{!! Form::textarea('emails_cc', null, ['class' => 'form-control']) !!}
+							</div>
+						</div>												
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">

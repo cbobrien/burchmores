@@ -19,6 +19,13 @@ $(document).ready(function() {
   // Copyright date
   var currentYear = (new Date).getFullYear();
   $("#copyright-year").text( (new Date).getFullYear() );
+
+    var liftoffTime = new Date();
+  liftoffTime = new Date(liftoffTime.getFullYear() + 0, 6 - 1, 26);
+  liftoffTime = new Date('2015-05-22T15:00');
+
+    
+
  
 });
 
@@ -37,25 +44,6 @@ $(document).ready(function() {
 
 // Countdown initial
 
-  var liftoffTime = new Date();
-  liftoffTime = new Date(liftoffTime.getFullYear() + 0, 6 - 1, 26);
-
-  $('#countdown-jhb').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
-  $('#countdown-cpt').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
-  $('#countdown-dbn').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
-
-  $('#countdown-jhb-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hnn} Hours, {mn} Minutes '});
-  $('#countdown-jhb-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-  $('#countdown-jhb-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-
-
-  $('#countdown-cpt-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-  $('#countdown-cpt-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-  $('#countdown-cpt-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-
-  $('#countdown-dbn-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-  $('#countdown-dbn-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-  $('#countdown-dbn-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});    
 
 
 

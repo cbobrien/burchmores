@@ -187,6 +187,6 @@
   <!-- Custom scripts
   ================================================== -->  
   <script src="/js/scripts.js"></script>
-
+@yield ('scripts')
 </body>
 </html>

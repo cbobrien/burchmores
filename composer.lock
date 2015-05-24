@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4922e7f00b1b482396935201c682afa7",
+    "hash": "5689259953d07e734fd2b29d3d30cd8d",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -278,31 +278,35 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "4.0.0",
+            "version": "4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "4063f08ca434efac12bf7a3db0d370b1c451345b"
+                "reference": "66fd916e9f9130bc22c51450476823391cb2f67c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/4063f08ca434efac12bf7a3db0d370b1c451345b",
-                "reference": "4063f08ca434efac12bf7a3db0d370b1c451345b",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/66fd916e9f9130bc22c51450476823391cb2f67c",
+                "reference": "66fd916e9f9130bc22c51450476823391cb2f67c",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/streams": "1.*",
+                "ext-json": "*",
+                "guzzlehttp/streams": "~2.1",
                 "php": ">=5.4.0"
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "4.*",
-                "psr/log": "~1"
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "suggest": {
+                "ext-curl": "Guzzle will use specific adapters if cURL is present"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0.x-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -335,20 +339,20 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-03-29 23:11:36"
+            "time": "2014-10-05 19:29:14"
         },
         {
             "name": "guzzlehttp/streams",
-            "version": "1.5.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/streams.git",
-                "reference": "fb0d1ee29987c2bdc59867bffaade6fc88c2675f"
+                "reference": "f91b721d73f0e561410903b3b3c90a5d0e40b534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/streams/zipball/fb0d1ee29987c2bdc59867bffaade6fc88c2675f",
-                "reference": "fb0d1ee29987c2bdc59867bffaade6fc88c2675f",
+                "url": "https://api.github.com/repos/guzzle/streams/zipball/f91b721d73f0e561410903b3b3c90a5d0e40b534",
+                "reference": "f91b721d73f0e561410903b3b3c90a5d0e40b534",
                 "shasum": ""
             },
             "require": {
@@ -360,7 +364,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -388,7 +392,7 @@
                 "Guzzle",
                 "stream"
             ],
-            "time": "2014-08-10 23:57:01"
+            "time": "2014-08-17 21:15:53"
         },
         {
             "name": "illuminate/html",
