@@ -6,7 +6,7 @@
 
 	{!! html_entity_decode($content) !!}
 
-	<img src="/img/about-1.jpg" class="img-responsive" alt="About Burchmores" />
+{{-- 	<img src="/img/about-1.jpg" class="img-responsive" alt="About Burchmores" />
 
 	<br />
 
@@ -32,7 +32,7 @@
 	Members of the organisation vary from large corporates to smaller businesses. No matter the size of the company, by becoming a member of SAIA, auctioneering houses display their commitment to offering a professional service to both Sellers and Buyers.
 	<br /><br />
 	SAIA members are compelled to meet legal requirements by belonging to the Estate Agency Affairs Board if they sell property. They also contribute towards a Fidelity Fund that offers financial protection for the public who are involved in selling or buying movable goods at auction.
-
+ --}}
 	
 
 </div><!-- //.relative -->

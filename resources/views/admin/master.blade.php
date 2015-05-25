@@ -98,22 +98,43 @@
               	<li><a href="/admin/location/create"><i class="fa fa-circle-o"></i>Add Location</a></li>
 		        </ul>						
 					</li>		
-							<li class="treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-building-o"></i> <span>Cities</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
-				<ul class="treeview-menu">
+						<ul class="treeview-menu">
               	<li class=""><a href="/admin/cities"><i class="fa fa-circle-o"></i>List Cities</a></li>
               	<li><a href="/admin/cities/create"><i class="fa fa-circle-o"></i>Add City</a></li>
 		        </ul>						
 					</li>	
-					<li class=""><a href="/admin/enquiries"><i class="fa fa-circle-o"></i>Auction Enquiries</a></li>
-              		<li class=""><a href="/admin/finance-enquiries"><i class="fa fa-circle-o"></i>Finance Enquiries</a></li>
-		    		<li class=""><a href="/admin/sell-cars"><i class="fa fa-circle-o"></i>Sell Your Car Enquiries</a></li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-envelope-o"></i> <span>Enquiries</span> <i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+              	<li class=""><a href="/admin/enquiries"><i class="fa fa-circle-o"></i>Auction Enquiries</a></li>
+              	<li class=""><a href="/admin/finance-enquiries"><i class="fa fa-circle-o"></i>Finance Enquiries</a></li>
+              	<li class=""><a href="/admin/sell-cars"><i class="fa fa-circle-o"></i>Sell Your Car Enquiries</a></li>
+		        </ul>						
+					</li>	
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-pencil-square-o"></i> <span>Content</span> <i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+              	<li class=""><a href="/admin/content/home"><i class="fa fa-circle-o"></i>Home Content</a></li>
+								<li class=""><a href="/admin/content/about-us"><i class="fa fa-circle-o"></i>About Us Content</a></li>
+              	<li class=""><a href="/admin/content/finance-warranties"><i class="fa fa-circle-o"></i>Finance &amp; Warranties Content</a></li>
+		        </ul>						
+					</li>	
 
-		    		<li class=""><a href="/admin/content/home"><i class="fa fa-circle-o"></i>Home Content</a></li>
-		    		<li class=""><a href="/admin/content/about-us"><i class="fa fa-circle-o"></i>About Us Content</a></li>
-		    		<li class=""><a href="/admin/content/finance-warranties"><i class="fa fa-circle-o"></i>Finance &amp; Warranties Content</a></li>																													
+					
+              		
+		    		
+
+		    		
+		    		
+		    																															
 				</ul> 
 			</section>
 		</aside>

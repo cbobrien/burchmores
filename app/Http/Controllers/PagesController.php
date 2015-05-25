@@ -64,6 +64,7 @@ class PagesController extends Controller {
 
   public function auction(Auction $auction)
   {
+    dd($auction);
     return View::make('pages.auction')->with(["title" => "Auction", 'auction' => $auction]);
     // return View::make('pages.about')->with("title","About Us");
   }        
