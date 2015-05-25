@@ -4,6 +4,8 @@
 
 <div class="relative white-container">
 
+	{!! html_entity_decode($content) !!}
+
 	<img src="/img/about-1.jpg" class="img-responsive" alt="About Burchmores" />
 
 	<br />

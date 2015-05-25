@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\Content;
+use App\Http\Requests\ContentRequest;
 
 class ContentController extends Controller {
 
@@ -23,10 +24,12 @@ class ContentController extends Controller {
 	 */
 	public function update(ContentRequest $request)
 	{
-		dd($request->page);
+		// dd($request->page);
 
-		$content_page =  Content::where('page', '=', $page)->first();
-		$content_page->content = '';
+		$content_page =  Content::where('page', '=', trim($request->page))->first();
+		$content_page->content = $request->content;
+		$content_page->update();
+		return redirect()->route('admin.content.edit', trim($request->page))->with('Title', 'Edit content', 'content', $request->content);
 	}
 
 	/**
