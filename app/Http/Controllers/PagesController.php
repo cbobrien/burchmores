@@ -5,6 +5,7 @@ use App\FAQ;
 use App\City;
 use App\Location;
 use App\Auction;
+use App\Content;
 
 class PagesController extends Controller {
 
@@ -36,14 +37,15 @@ class PagesController extends Controller {
    */
   public function index()
   {
-    // return view('pages/home');
-    return View::make('pages/home')->with("title","Home");
+   
+    $content = Content::where('page', 'home')->pluck('content');
+    return View::make('pages/home')->with(["title" => "Home", 'content' => $content]);
   }
 
   public function about()
   {
-    // return view('pages/about');
-    return View::make('pages.about')->with("title","About Us");
+    $content = Content::where('page', 'about-us')->pluck('content');
+    return View::make('pages.about')->with(["title" => "About Us", 'content' => $content]);
   }  
 
   public function contact()
@@ -100,8 +102,8 @@ class PagesController extends Controller {
 
   public function financesAndWarranties()
   {
-    // return view('pages/about');
-    return View::make('pages.financesAndWarranties')->with("title","Finances & Warranties");
+    $content = Content::where('page', 'finance-warranties')->pluck('content');
+    return View::make('pages.financesAndWarranties')->with(["title" => "Finances & Warranties", 'content' => $content]);
   }    
 
     public function financeEnquiry()

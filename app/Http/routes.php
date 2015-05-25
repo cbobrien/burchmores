@@ -69,7 +69,7 @@ Route::post('/auction/send', ['as' => 'auction.send', 'uses' => 'FormsController
   // Route::get('/admin/content/all', 'Admin\ContentController@ajaxAll');
   // Route::get('/admin/content/{page}', 'Admin\ContentController@getPage');
 
-Route::get('/admin/content/{page}', 'Admin\ContentController@edit');
+Route::get('/admin/content/{page}', ['as' => 'admin.content.edit', 'uses' => 'Admin\ContentController@edit']);
 Route::post('/admin/content', ['as' => 'admin.content.update', 'uses' => 'Admin\ContentController@update']);
   // Route::resource('/admin/sell-cars', 'Admin\SellCarsController', ['except' => ['create', 'store', 'edit', 'update']]);
 

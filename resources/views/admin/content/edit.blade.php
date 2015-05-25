@@ -12,7 +12,6 @@
 					@include ('errors.list')
 
 					{!! Form::open(['route' => 'admin.content.update', 'class' => 'form-horizontal']) !!}				
-
 						
 						<div class="form-group">
 							<label for="category" class="col-md-4 control-label">Content</label>
@@ -21,7 +20,7 @@
 							</div>
 						</div>	
 
-						<input type="hidden" name="page" text="{{ $page }}">			
+						<input type="hidden" name="page" value="{{ $page }}">			
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">

@@ -4,6 +4,8 @@
 
 <div class="relative white-container">
 
+	{!! html_entity_decode($content) !!}
+
 	<h1>Finance and Warranties</h1>
 
 	Burchmore’s offers you expert advice on car finance. We have finance available with 4 of the major banks. <a href="">Apply online</a> today – the safe &amp; hassle free way for finance!

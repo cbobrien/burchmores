@@ -23,6 +23,9 @@
 	</div><!-- //#comic-header -->
 
 	<div class="content-container" id="home">
+
+		{!! html_entity_decode($content) !!}
+
 		<h1 class="home">Welcome to BURCHMORE'S, where you can buy your dream vehicle at a wholesale price.</h2>
 
 		BURCHMORE'S has been bringing together buyers and sellers for more than 100 years. Established in 1911 as JC BURCHMORE'S, we were one of the first companies to let people across South Africa buy and sell a wide range of vehicles at auction. From budget runarounds to exotic imports, we have the ideal vehicle for you. We are the only auction entre with a drive through auction facility thus offering prospective buyers a one of a kind view of the vehicles on show. 
