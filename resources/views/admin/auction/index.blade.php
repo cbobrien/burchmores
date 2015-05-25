@@ -22,8 +22,8 @@
 						        	<th>Created</th>        	
 						            <th>Date</th>
 						            <th>Location</th>
-						            <th class="col-md-1 text-center">Edit</th>
-						            <th class="col-md-1 text-center">Delete</th>					         
+						            <th class="text-center">Edit</th>
+						            <th class="text-center">Delete</th>					         
 						        </tr>
 						    </thead>
 						</table>
@@ -42,11 +42,11 @@
 		        "serverSide": true,
 		        "ajax": "{{ Config::get('app.url') }}/admin/auctions/all",
 		        "columns": [			        	
-		        		{data: 'created_at', name: 'created_at'},
-		           	{data: 'auction_date', name: 'auction_date'},
-		           	{data: 'name', name: 'name'},
-		            {data: 'edit', name: 'edit', orderable: false, class: 'text-center'},
-		            {data: 'delete', name: 'delete', orderable: false, class: 'text-center'}       
+		        	{data: 'created_at', name: 'auctions.created_at'},
+		           	{data: 'auction_date', name: 'auctions.auction_date'},
+		           	{data: 'name', name: 'locations.name'},
+		            {data: 'edit', name: 'edit', orderable: false, searchable: false, class: 'text-center'},
+		            {data: 'delete', name: 'delete', orderable: false, searchable: false, class: 'text-center'}       
 		        ]
 		    });
 		});

@@ -19,14 +19,10 @@
 						<table id="cars" class="table table-hover table-striped table-bordered">
 						    <thead>
 						        <tr>						        	
-						            <th class="col-md-2">Name</th>
-						            <th class="col-md-2">City</th>
-						            <th class="col-md-2">Address</th>
-						            <th class="col-md-1">Longitude</th>
-						            <th class="col-md-1">latitude</th>
-						            <th class="col-md-2">Telephone</th>
-						            <th class="col-md-1 text-center">Edit</th>
-						            <th class="col-md-1 text-center">Delete</th>					         
+						            <th>Name</th>
+						            <th>City</th>						          
+						            <th class="text-center">Edit</th>
+						            <th class="text-center">Delete</th>					         
 						        </tr>
 						    </thead>
 						</table>
@@ -46,11 +42,7 @@
 		        "ajax": "{{ Config::get('app.url') }}/admin/location/all",
 		        "columns": [			        	
 		           	{data: 'name', name: 'name'},
-		           	{data: 'city', name: 'city'},
-		           	{data: 'address', name: 'address'},
-		           	{data: 'longitude', name: 'longitude'},
-		           	{data: 'latitude', name: 'latitude'},
-		           	{data: 'telephone', name: 'telephone'},
+		           	{data: 'city', name: 'city'},		           
 		            {data: 'edit', searchable: false, name: 'edit', orderable: false, class: 'text-center'},
 		            {data: 'delete', searchable: false, name: 'delete', orderable: false, class: 'text-center'}       
 		        ]

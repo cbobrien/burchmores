@@ -57,7 +57,7 @@ class AuctionController extends Controller {
 	{
 
 		$auctions = Auction::join('locations', 'auctions.location_id', '=', 'locations.id')
-     ->select(['auctions.id as id', 'auctions.auction_date as auction_date', 'auctions.auction_time as auction_time' , 'auctions.created_at as created_at' , 'locations.name as name'])
+     ->select(['auctions.id as id', 'auctions.auction_date as auction_date', 'auctions.created_at as created_at' , 'locations.name as name'])
      ->orderBy('auctions.created_at' , 'desc');  
 
      return Datatables::of($auctions)

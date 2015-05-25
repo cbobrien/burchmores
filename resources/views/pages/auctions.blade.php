@@ -40,12 +40,17 @@
 			@if ($city->city == 'Johannesburg')
 
 				<div class="col-md-4 timer-spacer">											
-
+				
+				
+						<?php $auction_count = 0; ?>
+		
 						@foreach ($city->locations as $location)
 
 							<?php $i = 1; ?>
 
 							@foreach ($location->auctions as $auction)
+
+								<?php $auction_count++; ?>
 
 								@if ($i == 1)
 
@@ -61,7 +66,7 @@
 											</div>
 										</div>
 										<a href="/auction/{{ $auction->id }}" class="button">
-											CLICK HERE FOR DETAILSss
+											CLICK HERE FOR DETAILS
 										</a>
 									</div>
 								@else
@@ -75,7 +80,13 @@
 							@endforeach
 							
 						@endforeach
+
+						@if($auction_count == 0)			
+							<p>No auctions</p>					
+						@endif
 				</div>
+
+				
 
 			@endif
 
