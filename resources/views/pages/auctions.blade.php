@@ -129,6 +129,10 @@
 							@endforeach							
 						@endforeach
 
+						@if($auction_count == 0)			
+							<p>No auctions</p>					
+						@endif						
+
 				</div>
 
 			@endif
@@ -169,6 +173,11 @@
 
 							@endforeach
 						@endforeach
+
+						@if($auction_count == 0)			
+							<p>No auctions</p>					
+						@endif
+
 				</div>
 
 			@endif
@@ -190,18 +199,18 @@
 					
 					<h2>{{ $city->city }}</h2>
 					
-					<p class="body">
+					<div class="body">
 
 						@foreach ($city->testimonials as $testimonial)
-
-							{{ "<div class='testimonial-content'>" . $testimonial->content . "</div>" }} 
+				
+							<div class="testimonial-content">{{ $testimonial->content }}</div>
 							{{ trim($testimonial->name) != '' ? ' - ' : '' }}
 							{{ $testimonial->name }}
 							<br>
 
 						@endforeach
 
-					</p><!-- //.body -->	
+					</div><!-- //.body -->	
 
 			</div><!-- //.col-md-4 -->
 		
@@ -234,24 +243,25 @@
 	// alert(addHours(new Date("{{ $time_jhb_1 }}"), 4));
 
 
-		// Date.addHours(new Date("{{ $time_jhb_1 }}"), 2);
+		Date.addHours(new Date("{{ $time_jhb_1 }}"), 2);
+		// Date.today().add(1).day();
 	$(function() {
 	 	$('#countdown-jhb').countdown({until: new Date("{{ $time_jhb_1 }}"), padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
-	  // $('#countdown-cpt').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
-	  // $('#countdown-dbn').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
+	  $('#countdown-cpt').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
+	  $('#countdown-dbn').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
 
-	  // $('#countdown-jhb-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hnn} Hours, {mn} Minutes '});
-	  // $('#countdown-jhb-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-	  // $('#countdown-jhb-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
+	  $('#countdown-jhb-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hnn} Hours, {mn} Minutes '});
+	  $('#countdown-jhb-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
+	  $('#countdown-jhb-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
 
 
-	  // $('#countdown-cpt-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-	  // $('#countdown-cpt-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-	  // $('#countdown-cpt-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
+	  $('#countdown-cpt-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
+	  $('#countdown-cpt-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
+	  $('#countdown-cpt-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
 
-	  // $('#countdown-dbn-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-	  // $('#countdown-dbn-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-	  // $('#countdown-dbn-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '}); 
+	  $('#countdown-dbn-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
+	  $('#countdown-dbn-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
+	  $('#countdown-dbn-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '}); 
 	});
 
 	
