@@ -61,7 +61,7 @@
 										<div class="timer-inner">
 											<div id="countdown-jhb" class="digits">
 												{{ $auction->auction_date }}
-												<?php ${"time_jhb_" . $i} = $auction->auction_date; ?>
+												<?php ${"time_jhb_" . $i} = date(DATE_ISO8601, strtotime($auction->auction_date)); ?>
 			
 											</div>
 										</div>
@@ -236,7 +236,8 @@
 
 		// Date.addHours(new Date("{{ $time_jhb_1 }}"), 2);
 	$(function() {
-	 	$('#countdown-jhb').countdown({until: new Date("{{ $time_jhb_1 }}"), padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
+		console.log('{{ $time_jhb_1 }}');
+	 	$('#countdown-jhb').countdown({until: new Date('{{ $time_jhb_1 }}'), padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
 	  // $('#countdown-cpt').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
 	  // $('#countdown-dbn').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
 
