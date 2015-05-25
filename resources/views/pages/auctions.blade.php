@@ -61,9 +61,10 @@
 										<div class="timer-inner">
 											<div id="countdown-jhb" class="digits">
 												{{ $auction->auction_date }}
-												<?php ${"time_jhb_" . $i} = $auction->auction_date; ?>
+												<?php ${"time_jhb_" . $i} = date(DATE_ISO8601, strtotime($auction->auction_date)); ?>
 			
 											</div>
+											DAYS HOURS MINUTES
 										</div>
 										<a href="/auction/{{ $auction->id }}" class="button">
 											CLICK HERE FOR DETAILS
@@ -107,12 +108,13 @@
 											Cape Town
 										</div>
 										<div class="timer-inner">
-											<div id="countdown-jhb" class="digits">
+											<div id="countdown-cpt" class="digits">
 												{{ $auction->auction_date }}
-												<?php  ${"time_cpt_". $i} = $auction->auction_date; ?>
+												<?php ${"time_cpt_" . $i} = date(DATE_ISO8601, strtotime($auction->auction_date)); ?>
 
 												<?php echo $city_name; ?>
 											</div>
+											DAYS HOURS MINUTES
 										</div>
 										<a href="/auction/{{ $auction->id }}" class="button">
 											CLICK HERE FOR DETAILS
@@ -154,10 +156,12 @@
 											Durban
 										</div>
 										<div class="timer-inner">
-											<div id="countdown-jhb" class="digits">
+											<div id="countdown-dbn" class="digits">
 												{{ $auction->auction_date }}
-												<?php ${"time_dbn_" . $i} = $auction->auction_date; ?>
+												<?php ${"time_dbn_" . $i} = date(DATE_ISO8601, strtotime($auction->auction_date)); ?>			
+
 											</div>
+											DAYS HOURS MINUTES
 										</div>
 										<a href="/auction/{{ $auction->id }}" class="button">
 											CLICK HERE FOR DETAILS
@@ -243,12 +247,14 @@
 	// alert(addHours(new Date("{{ $time_jhb_1 }}"), 4));
 
 
-		Date.addHours(new Date("{{ $time_jhb_1 }}"), 2);
+
 		// Date.today().add(1).day();
 	$(function() {
+
 	 	$('#countdown-jhb').countdown({until: new Date("{{ $time_jhb_1 }}"), padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
-	  $('#countdown-cpt').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
-	  $('#countdown-dbn').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
+	 	$('#countdown-cpt').countdown({until: new Date("{{ $time_cpt_1 }}"), padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
+	 	$('#countdown-dbn').countdown({until: new Date("{{ $time_dbn_1 }}"), padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
+
 
 	  $('#countdown-jhb-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hnn} Hours, {mn} Minutes '});
 	  $('#countdown-jhb-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});

@@ -6862,7 +6862,7 @@ h1.home {
       font-weight: bold;
       padding: 35px 22px 26px; }
     .white-container .timer-container .timer-inner {
-      font-size: 27px;
+      font-size: 23px;
       background: #006838;
       padding: 14px 22px;
       font-weight: bold;
@@ -6875,11 +6875,12 @@ h1.home {
     .white-container .timer-container a.button {
       background: #15a964;
       color: #fff;
-      font-size: 23px;
+      font-size: 19px;
       font-weight: bold;
       padding: 20px 26px 19px;
       display: block;
-      transition: all 0.5s ease; }
+      transition: all 0.5s ease;
+      text-align: center; }
     .white-container .timer-container a.button:hover {
       background: #414042;
       color: #fff;
