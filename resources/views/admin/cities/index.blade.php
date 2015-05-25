@@ -19,9 +19,9 @@
 						<table id="cities" class="table table-hover table-striped table-bordered">
 						    <thead>
 						        <tr>						        	
-						            <th class="col-md-10">City</th>
-						            <th class="col-md-1 text-center">Edit</th>
-						            <th class="col-md-1 text-center">Delete</th>					         
+						            <th>City</th>
+						            <th class="text-center">Edit</th>
+						            <th class="text-center">Delete</th>					         
 						        </tr>
 						    </thead>
 						</table>
