@@ -20,44 +20,6 @@ $(document).ready(function() {
   var currentYear = (new Date).getFullYear();
   $("#copyright-year").text( (new Date).getFullYear() );
 
-// Countdown initial
-
-  var liftoffTime = new Date('2015-05-29 18:48:00');
-  console.log(liftoffTime);
-
-  $('#countdown-jhb').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
-  $('#countdown-cpt').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
-  $('#countdown-dbn').countdown({until: liftoffTime, padZeroes: true, layout: '{dnn} {hnn} {mnn}'});
-
-  $('#countdown-jhb-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hnn} Hours, {mn} Minutes '});
-  $('#countdown-jhb-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-  $('#countdown-jhb-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-
-
-  $('#countdown-cpt-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-  $('#countdown-cpt-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-  $('#countdown-cpt-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-
-  $('#countdown-dbn-1').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-  $('#countdown-dbn-2').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});
-  $('#countdown-dbn-3').countdown({until: liftoffTime, padZeroes: true, layout: 'Auction Thereafter:<br>{dn} Days, {hn} Hours, {mn} Minutes '});  
- 
-});
-
-  /**
- * Enquire functions
- */
-
- function greaterThan767 (){
-  console.log("greater than 767px");
- }
-
- function lowerThan767 (){
-  console.log("lower than 767px");
-  $('.car-menu').hide();
- } 
-
-    
 
 
 

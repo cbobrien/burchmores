@@ -19,13 +19,10 @@
             <table id="cars" class="table table-hover table-striped table-bordered">
                 <thead>
                     <tr>                      
-                        <th class="col-md-10">Name</th>
-                        <th class="col-md-10">Surname</th>
-                        <th class="col-md-10">Telephone</th>
-                        <th class="col-md-10">Email</th>
-                        <th class="col-md-10">Message</th>
-                        <th class="col-md-1 text-center">Edit</th>
-                        <th class="col-md-1 text-center">Delete</th>                   
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th class="text-center">Delete</th>                   
                     </tr>
                 </thead>
             </table>
@@ -44,12 +41,9 @@
             "serverSide": true,
             "ajax": "{{ Config::get('app.url') }}/admin/enquiries/all",
             "columns": [                
-                {data: 'first_name', name: 'first_name'},
-                {data: 'surname', name: 'surname'},
-                {data: 'telephone', name: 'telephone'},
-                {data: 'email', name: 'email'},
-                {data: 'message', name: 'message'},
-                {data: 'edit', searchable: false, name: 'edit', orderable: false, class: 'text-center'},
+                {data: 'name', name: 'enquiries.surname'},
+                {data: 'location', name: 'locations.name'},
+                 {data: 'date', name: 'auctions.auction_date', searchable: false},
                 {data: 'delete', searchable: false, name: 'delete', orderable: false, class: 'text-center'}       
             ]
         });

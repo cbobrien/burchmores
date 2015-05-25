@@ -6,113 +6,151 @@
 
 	<h1 class="page-header">Sell Your Car</h1>
 
-	@include ('errors.list')
+	<div class="form-container">
 
-	{!! Form::open(['route' => 'sell-your-car.send', 'files' => true]) !!}
-		<div class="form-group">
-			<label for="city_id">Region</label>
-			<div class="col-md-6">
-				{!! Form::select('city_id', [null => 'Please Select'] + $cities, null, ['class' => 'form-control']) !!}
-			</div>
-		</div>
+		@include ('errors.list')
 
-		<div class="form-group">
-			<label for="first_name">First Name</label>			
-			{!! Form::text('first_name', null, ['class' => 'form-control']) !!}		
-		</div>   
+		{!! Form::open(['route' => 'sell-your-car.send', 'files' => true]) !!}
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Region</h3>
+					{!! Form::select('city_id', [null => 'Please Select'] + $cities, null) !!}
+				</div><!-- //.col-md-12 -->
+			</div><!-- //.row -->	
 
-		<div class="form-group">
-			<label for="surname">Surname</label>			
-			{!! Form::text('surname', null, ['class' => 'form-control']) !!}		
-		</div>    
+			<div class="row">
+				<div class="col-md-12">
+					<h3>First Name</h3>		
+					{!! Form::text('first_name', null) !!}
+				</div><!-- //.col-md-12 -->
+			</div><!-- //.row -->	   
 
-		<div class="form-group">
-			<label for="surname">Contact Number</label>			
-			{!! Form::text('telephone', null, ['class' => 'form-control']) !!}		
-		</div>      
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Surname</h3>			
+					{!! Form::text('surname', null) !!}
+				</div><!-- //.col-md-12 -->
+			</div><!-- //.row -->	    
 
- 		<div class="form-group">
-			<label for="surname">Email Address</label>			
-			{!! Form::email('email', null, ['class' => 'form-control']) !!}		
-		</div>  
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Contact Number</h3>			
+					{!! Form::text('telephone', null) !!}
+				</div><!-- //.col-md-12 -->
+			</div><!-- //.row -->	     
 
-		<div class="form-group">
-			<label for="surname">Make</label>			
-			{!! Form::text('make', null, ['class' => 'form-control']) !!}		
-		</div> 
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Email Address</h3>			
+						{!! Form::email('email', null) !!}
+					</div><!-- //.col-md-12 -->
+				</div><!-- //.row -->
 
-		<div class="form-group">
-			<label for="surname">Model</label>			
-			{!! Form::text('model', null, ['class' => 'form-control']) !!}		
-		</div>  
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Make</h3>			
+						{!! Form::text('make', null) !!}		
+					</div><!-- //.col-md-12 -->
+				</div><!-- //.row -->
 
-		<div class="form-group">
-			<label for="surname">Year</label>			
-			{!! Form::text('year', null, ['class' => 'form-control']) !!}		
-		</div> 
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Model</h3>			
+					{!! Form::text('model', null) !!}		
+				</div><!-- //.col-md-12 -->
+			</div><!-- //.row -->	  
 
-		<div class="form-group">
-			<label for="surname">Mileage</label>			
-			{!! Form::text('mileage', null, ['class' => 'form-control']) !!}		
-		</div> 
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Year</h3>			
+					{!! Form::text('year', null) !!}		
+				</div><!-- //.col-md-12 -->
+			</div><!-- //.row -->	 
 
-		<div class="form-group">
-			<label for="surname">Colour</label>			
-			{!! Form::text('colour', null, ['class' => 'form-control']) !!}		
-		</div> 
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Mileage</h3>			
+					{!! Form::text('mileage', null) !!}
+				</div><!-- //.col-md-12 -->
+			</div><!-- //.row -->	 
 
-		<div class="form-group">
-			<label for="surname">Registration</label>			
-			{!! Form::text('registration', null, ['class' => 'form-control']) !!}		
-		</div> 
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Colour</h3>			
+					{!! Form::text('colour', null) !!}
+				</div><!-- //.col-md-12 -->
+			</div><!-- //.row -->	 
 
-		<div class="form-group">
-			<label for="surname">Comments</label>			
-			{!! Form::textarea('comments', null, ['class' => 'form-control']) !!}		
-		</div>  
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Registration</h3>			
+					{!! Form::text('registration', null) !!}
+				</div><!-- //.col-md-12 -->
+			</div><!-- //.row -->	
 
-		<div class="form-group">
-			<label for="image_path1">Pic 1</label>
-			<div>
-				{!! Form::file('image_path1') !!}
-			</div>
-		</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Comments</h3>			
+					{!! Form::textarea('comments', null) !!}
+				</div><!-- //.col-md-12 -->
+			</div><!-- //.row -->	 
 
-		<div class="form-group">
-			<label for="image_path2">Pic 2</label>
-			<div>
-				{!! Form::file('image_path2') !!}
-			</div>
-		</div>	
+			<div class="row">
+				<div class="col-md-12">
+				<h3>Pic 1</h3>
+				<div>
+					{!! Form::file('image_path1') !!}
+				</div>
+			</div><!-- //.col-md-12 -->
+		</div><!-- //.row -->	
 
-		<div class="form-group">
-			<label for="image_path3">Pic 3</label>
-			<div>
-				{!! Form::file('image_path3') !!}
-			</div>
-		</div>
+			<div class="row">
+				<div class="col-md-12">
+				<h3>Pic 2</h3>
+				<div>
+					{!! Form::file('image_path2') !!}
+				</div>
+			</div><!-- //.col-md-12 -->
+		</div><!-- //.row -->		
 
-		<div class="form-group">
-			<label for="image_path4">Pic 4</label>
-			<div>
-				{!! Form::file('image_path4') !!}
-			</div>
-		</div>
+			<div class="row">
+				<div class="col-md-12">
+				<h3>Pic 3</h3>
+				<div>
+					{!! Form::file('image_path3') !!}
+				</div>
+			</div><!-- //.col-md-12 -->
+		</div><!-- //.row -->	
 
-		<div class="form-group">
-			<label for="image_path5">Pic 5</label>
-			<div>
-				{!! Form::file('image_path5') !!}
-			</div>
-		</div>
+			<div class="row">
+				<div class="col-md-12">
+				<h3>Pic 4</h3>
+				<div>
+					{!! Form::file('image_path4') !!}
+				</div>
+			</div><!-- //.col-md-12 -->
+		</div><!-- //.row -->	
 
-		<div class="form-group">
-			<div class="">
-				<button type="submit" class="btn btn-primary">Send</button>
-			</div>
-		</div>
+			<div class="row">
+				<div class="col-md-12">
+				<h3>Pic 5</h3>
+				<div>
+					{!! Form::file('image_path5') !!}
+				</div>
+			</div><!-- //.col-md-12 -->
+		</div><!-- //.row -->	
 
-	{!! Form::close() !!}
+			<div class="row">
+				<div class="col-md-12">
+
+					<input type="submit" class="submit green-btn" value="SUBMIT" />
+
+			</div><!-- //.col-md-12 -->
+		</div><!-- //.row -->	
+
+		{!! Form::close() !!}
+
+	</div><!-- //.form-container -->	
 
 	<!-- {!! Form::open(['route' => 'admin.auctions.store', 'class' => 'form-horizontal', 'files' => true]) !!}				
 

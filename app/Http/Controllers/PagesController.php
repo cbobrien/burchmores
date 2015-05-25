@@ -4,6 +4,7 @@ use View;
 use App\FAQ;
 use App\City;
 use App\Location;
+use App\Auction;
 
 class PagesController extends Controller {
 
@@ -59,9 +60,9 @@ class PagesController extends Controller {
     // return View::make('pages.about')->with("title","About Us");
   }      
 
-  public function auction()
+  public function auction(Auction $auction)
   {
-    return View::make('pages.auction')->with("title","Auction");
+    return View::make('pages.auction')->with(["title" => "Auction", 'auction' => $auction]);
     // return View::make('pages.about')->with("title","About Us");
   }        
 

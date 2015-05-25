@@ -17,7 +17,7 @@ Route::get('/', 'PagesController@index');
 Route::get('/about-us', 'PagesController@about');
 Route::get('/contact-us', 'PagesController@contact');
 Route::get('/auctions', 'PagesController@auctions');
-Route::get('/auction', 'PagesController@auction');
+Route::get('/auction/{auction_id}', 'PagesController@auction');
 Route::get('/sell-your-car', 'PagesController@sellYourCar');
 Route::get('/how-to-register', 'PagesController@howToRegister');
 Route::get('/finances-and-warranties', 'PagesController@financesAndWarranties');
@@ -32,7 +32,7 @@ Route::get('/thank-you', ['as' => 'pages.thanks', 'uses' => 'PagesController@tha
 //front end forms
 Route::post('/finance-enquiry/send', ['as' => 'finance-enquiry.send', 'uses' => 'FormsController@financeEnquiry']);
 Route::post('/sell-you-car/send', ['as' => 'sell-your-car.send', 'uses' => 'FormsController@sellYourCar']);
-
+Route::post('/auction/send', ['as' => 'auction.send', 'uses' => 'FormsController@auction']);
 
 
 // Route::group(['middleware' => 'auth'], function () {  

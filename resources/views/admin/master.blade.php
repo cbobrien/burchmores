@@ -107,7 +107,7 @@
               	<li><a href="/admin/cities/create"><i class="fa fa-circle-o"></i>Add City</a></li>
 		        </ul>						
 					</li>	
-					
+					<li class=""><a href="/admin/enquiries"><i class="fa fa-circle-o"></i>Auction Enquiries</a></li>
               		<li class=""><a href="/admin/finance-enquiries"><i class="fa fa-circle-o"></i>Finance Enquiries</a></li>
 		    		<li class=""><a href="/admin/sell-cars"><i class="fa fa-circle-o"></i>Sell Your Car Enquiries</a></li>			
 																										

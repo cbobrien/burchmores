@@ -11,4 +11,9 @@ class Auction extends Model {
 	 	return $this->belongsTo('App\Location');
 	 }
 
+	 public static function getLocationIdById($id)
+	 {
+	 	return Auction::where('id', $id)->pluck('location_id');
+	 }
+
 }
