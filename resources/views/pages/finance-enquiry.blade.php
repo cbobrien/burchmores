@@ -22,21 +22,21 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h3>First Name</h3>
-					{!! Form::text('first_name', null) !!}	
+					{!! Form::text('first_name', null, ['required']) !!}	
 				</div><!-- //.col-md-12 -->
 			</div><!-- //.row -->	
 
 			<div class="row">
 				<div class="col-md-12">
 					<h3>Surname</h3>
-					{!! Form::text('surname', null) !!}
+					{!! Form::text('surname', null, ['required']) !!}
 				</div><!-- //.col-md-12 -->
 			</div><!-- //.row -->		
 
 			<div class="row">
 				<div class="col-md-12">
 					<h3>Contact Number</h3>
-					{!! Form::text('telephone', null) !!}
+					{!! Form::text('telephone', null, ['required']) !!}
 				</div><!-- //.col-md-12 -->
 			</div><!-- //.row -->	
 
@@ -50,7 +50,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h3>Email Address</h3>
-					{!! Form::email('email', null) !!}
+					{!! Form::email('email', null, ['required']) !!}
 				</div><!-- //.col-md-12 -->
 			</div><!-- //.row -->														          
 			
@@ -66,7 +66,7 @@
 			<div class="row">
 				<div class="col-md-12">
 				<h3>Comments</h3>		
-				{!! Form::textarea('comments', null) !!}
+				{!! Form::textarea('comments', null, ['required']) !!}
 				</div><!-- //.col-md-12 -->
 			</div><!-- //.row --> 
 

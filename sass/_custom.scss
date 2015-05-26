@@ -5,6 +5,10 @@ html {
   background:#DCDDDF;
 }
 
+#ui-datepicker-div {
+  top:65px !important;
+}
+
 .relative {
   position:relative;
 }
@@ -349,11 +353,16 @@ footer#main-footer {
     background:#004827;
   }
 
+  .footer-nav-inner {
+    display:inline-block;
+  }
 
 }
 
 .bidvest {
   display:inline-block;
+  float:right;
+  margin-top:-15px;
 }
 
 .navbar-default {

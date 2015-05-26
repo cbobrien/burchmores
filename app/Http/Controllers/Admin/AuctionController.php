@@ -76,7 +76,7 @@ class AuctionController extends Controller {
   { 
        $fileName = $this->cleanInput($title) . '-' . mt_rand() . '.' . $file->getClientOriginalExtension();
        $file->move(public_path() . '/files/lists/', $fileName);
-       return '/files/lists' . $fileName;
+       return '/files/lists/' . $fileName;
    }
 
    protected function processFile($name, $title, $request)

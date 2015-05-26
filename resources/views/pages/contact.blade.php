@@ -10,7 +10,7 @@
 
 	Call one of our auction managers for more information on our weekly auction specials.
 	<br /><br />
-	Burchmore’s offers you expert advice on car finance. We have finance available with 4 of the major banks. Contact us today – the hassle free way!
+	BURCHMORES offers you expert advice on car finance. We have finance available with 4 of the major banks. Contact us today – the hassle free way!
 
 	<div class="row table-container contact">
     <div class="col-md-8 col-md-push-4">

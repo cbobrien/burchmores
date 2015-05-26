@@ -39,7 +39,8 @@ class PagesController extends Controller {
   {
    
     $content = Content::where('page', 'home')->pluck('content');
-    return View::make('pages/home')->with(["title" => "Home", 'content' => $content]);
+    $video = Content::where('page', 'video')->pluck('content');
+    return View::make('pages/home')->with(["title" => "Home", 'content' => $content, 'video' => $video]);
   }
 
   public function about()
@@ -64,7 +65,6 @@ class PagesController extends Controller {
 
   public function auction(Auction $auction)
   {
-    dd($auction);
     return View::make('pages.auction')->with(["title" => "Auction", 'auction' => $auction]);
     // return View::make('pages.about')->with("title","About Us");
   }        

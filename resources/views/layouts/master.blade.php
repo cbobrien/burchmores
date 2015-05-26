@@ -131,8 +131,8 @@
 					<footer id="main-footer">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-6">
-                  <div class="bidvest"><img src="/img/bidvest.png" alt="Bidvest Automotive" /></div>
+								<div class="col-md-4">
+                  
                   <div class="social-container">
                     <a href="https://www.facebook.com/Burchmores" target="_blank" class="social-button">
                       <i href="" class="fa fa-facebook fa-2x"></i>
@@ -150,13 +150,18 @@
                       <i class="fa fa-pinterest-p fa-2x"></i>
                     </a>                       
                   </div><!-- //.social-container -->
-								</div><!-- //.col-md-6 -->
-								<div class="col-md-6 footer-nav">
-									<a href="sitemap">SiteMap</a> | 
-									<a href="terms">Terms Of Use</a> | 
-									<a href="privacy">Privacy Statement.</a> | 
-									Copyright <span id="copyright-year">2015</span> Burchmores
-								</div><!-- //.col-md-6 .footer-nav -->
+								</div><!-- //.col-md-4 -->
+								<div class="col-md-8 footer-nav">
+                  <div class="footer-nav-inner">
+  									<a href="sitemap">SiteMap</a> | 
+  									<a href="terms">Terms Of Use</a> | 
+  									<a href="privacy">Privacy Statement.</a> | 
+  									Copyright <span id="copyright-year">2015</span> Burchmores
+                  </div><!-- //.footer-nav-inner -->
+                  <div class="bidvest">
+                    <img src="/img/bidvest.png" alt="Bidvest Automotive" />
+                  </div>
+								</div><!-- //.col-md-8 .footer-nav -->
 							</div><!-- //.row -->
 						</div><!-- //.container -->
 					</footer><!-- ..#main-footer -->

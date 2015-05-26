@@ -10,7 +10,7 @@
 
 	<ul>
 	    <li>The final catalogue at the auction is subject to change. This list should be used as a guide only</li>
-	    <li>Burchmore’s reserves the right to remove a vehicle from the catalogue without notice.</li>
+	    <li>BURCHMORES reserves the right to remove a vehicle from the catalogue without notice.</li>
 	    <li>The Auction Guide contains detailed information about bidding at an auction.</li>
 	</ul>
 
@@ -23,8 +23,8 @@
 	<b>NO CASH OR PRIVATE/COMPANY CHEQUES</b> are accepted on our premises for payment.
 
 	<ul>
-	    <li>BANK CHEQUES made out to BURCHMORE’S for registration and payment of vehicles are allowed</li>
-	    <li>ELECTRONIC TRANSFERS – must reflect in BURCHMORE’S bank account on the day of the auction.</li>
+	    <li>BANK CHEQUES made out to BURCHMORES for registration and payment of vehicles are allowed</li>
+	    <li>ELECTRONIC TRANSFERS – must reflect in BURCHMORES bank account on the day of the auction.</li>
 	    <li>CREDIT OR DEBIT CARD PAYMENTS are accepted</li>
 	</ul>
 
@@ -75,8 +75,8 @@
 
 	<ul>
 	    <li>Collect invoice after the auction</li>
-	    <li>EFT Payments must reflect as CLEARED IN BURCHMORE’S BANK ACCOUNT before releasing any vehicles</li>
-	    <li>Only BANK CHEQUES made out to Burchmore’s will be accepted</li>
+	    <li>EFT Payments must reflect as CLEARED IN BURCHMORES BANK ACCOUNT before releasing any vehicles</li>
+	    <li>Only BANK CHEQUES made out to BURCHMORES will be accepted</li>
 	    <li>No credit or debit card payments can be done for the balance of the vehicle</li>
 	    <li>No cash accepted on premises</li>
 	    <li>14% VAT to be added to bidding price</li>
@@ -174,7 +174,7 @@
 	    <li>Affidavit authorizing someone else to collect vehicle and driver’s licence</li>
 	    <li>ID docs of person collecting the vehicle(If applicable) </li>
 	    <li>Affidavit stating that the customer purchased the vehicle on behalf of someone else (If applicable)</li>
-	    <li>BURCHMORE’S will do a notification of change of ownership</li>
+	    <li>BURCHMORES will do a notification of change of ownership</li>
 	    <li>The customer/company will be liable to do a roadworthy and licencing of the vehicle, and change of ownership</li>
 	    <li>Change of ownership must be done within 21 days</li>
 	    <li>PLEASE NOTE THE LAST DAY OF PAYMENT IS THE FIRST MONDAY AFTER THE AUCTION COB</li>
@@ -188,7 +188,7 @@
 	    <li>BEING BANNED FROM THE AUCTION CENTRE OR </li>
 	    <li>YOU WILL BE LIABLE TO PAY 10% OF THE PURCHASE PRICE </li>
 	    <li>VEHICLES ARE PURCHASED WITH NO DUTY TO REPAIR</li>
-	    <li>BURCHMORE’S will not entertain any claims for FAULTS AFTER THE SALE. </li>
+	    <li>BURCHMORES will not entertain any claims for FAULTS AFTER THE SALE. </li>
 	    <li>See and judge for yourself PRIOR to bidding</li>
 	    <li>No cancellations will be entertained</li>
 	    <li>Please be advised that the description and mileage is purely an indication and should be used as a guide only </li>
@@ -205,7 +205,7 @@
 
 	<h1>BURCHMORE'S Banking Details</h1>
 
-	<h2>BURCHMORE’S Sandton</h2>
+	<h2>BURCHMORES Sandton</h2>
 
 	<div class="row">
 		<div class="col-md-3">
@@ -252,7 +252,7 @@
 		</div><!-- //.col-md-9 -->
 	</div><!-- //.row -->			
 
-	<h2>BURCHMORE’S Cape Town</h2>
+	<h2>BURCHMORES Cape Town</h2>
 
 	<div class="row">
 		<div class="col-md-3">
@@ -299,14 +299,14 @@
 		</div><!-- //.col-md-9 -->
 	</div><!-- //.row -->		
 
-	<h2>BURCHMORE’S Durban</h2>
+	<h2>BURCHMORES Durban</h2>
 
 	<div class="row">
 		<div class="col-md-3">
 			Account Name
 		</div><!-- //.col-md-3 -->
 		<div class="col-md-9">
-			BURCHMORE’S DURBAN
+			BURCHMORES DURBAN
 		</div><!-- //.col-md-9 -->
 	</div><!-- //.row -->
 

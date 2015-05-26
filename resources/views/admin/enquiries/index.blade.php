@@ -39,7 +39,7 @@
         oTable = $('#cars').DataTable({
             "processing": true,
             "serverSide": true,
-            "ajax": "{{ Config::get('app.url') }}/admin/enquiries/all",
+            "ajax": "/admin/enquiries/all",
             "columns": [                
                 {data: 'name', name: 'enquiries.surname'},
                 {data: 'location', name: 'locations.name'},

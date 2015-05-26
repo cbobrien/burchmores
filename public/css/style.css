@@ -6774,6 +6774,9 @@ html {
   height: 100%;
   background: #DCDDDF; }
 
+#ui-datepicker-div {
+  top: 65px !important; }
+
 .relative {
   position: relative; }
 
@@ -7008,9 +7011,13 @@ footer#main-footer {
     transition: all 0.5s ease; }
   footer#main-footer a.social-button:hover {
     background: #004827; }
+  footer#main-footer .footer-nav-inner {
+    display: inline-block; }
 
 .bidvest {
-  display: inline-block; }
+  display: inline-block;
+  float: right;
+  margin-top: -15px; }
 
 .navbar-default {
   background: none;
@@ -7147,6 +7154,9 @@ footer#main-footer {
   width: 100%; }
 
 @media (max-width: 1199px) {
+  footer#main-footer a.social-button {
+    width: 41px;
+    height: 41px; }
   .white-container .timer-container a.button {
     font-size: 18px;
     padding: 20px 23px 19px; }
@@ -7171,6 +7181,9 @@ footer#main-footer {
     display: none !important; } }
 
 @media (max-width: 991px) {
+  footer#main-footer a.social-button {
+    width: 44px;
+    height: 44px; }
   .g-map {
     margin-top: 15px;
     border-bottom: 1px solid #dcdddf;
@@ -7210,7 +7223,23 @@ footer#main-footer {
   .footer-nav {
     width: 100%;
     text-align: center;
-    padding-top: 15px; } }
+    padding-top: 15px; }
+  #main-footer .social-container {
+    text-align: center;
+    display: block;
+    float: none; }
+    #main-footer .social-container a {
+      margin-left: 1px !important;
+      margin-right: 1px !important; }
+  #main-footer .footer-nav {
+    text-align: center;
+    padding-top: 15px; }
+  .bidvest {
+    width: 100%;
+    margin-top: 10px; }
+    .bidvest img {
+      display: block;
+      margin: 0 auto 15px; } }
 
 @media (min-width: 767px) {
   .scroller-inner {
@@ -7328,6 +7357,8 @@ footer#main-footer {
   .white-container .timer-container .timer-inner .digits {
     font-size: 41px; }
   #banner {
+    display: none; }
+  #comic-header.default {
     display: none; }
   #comic-header {
     height: 339px; }

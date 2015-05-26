@@ -140,21 +140,21 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h3>First name*</h3>
-								{!! Form::input('text', 'first_name', null) !!}
+								{!! Form::input('text', 'first_name', null, ['required']) !!}
 							</div><!-- //.col-md-12 -->
 						</div><!-- //.row -->		
 
 						<div class="row">
 							<div class="col-md-12">
 								<h3>Surname*</h3>
-								{!! Form::input('text', 'surname', null) !!}
+								{!! Form::input('text', 'surname', null, ['required']) !!}
 							</div><!-- //.col-md-12 -->
 						</div><!-- //.row -->		
 
 						<div class="row">
 							<div class="col-md-12">
 								<h3>Email*</h3>
-								{!! Form::input('email', 'email', null) !!}
+								{!! Form::input('email', 'email', null, ['required']) !!}
 							</div><!-- //.col-md-12 -->
 						</div><!-- //.row -->			
 
@@ -168,7 +168,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h3>Message*</h3>
-								{!! Form::textarea('message', null, ["cols"=>"10", "rows"=>"5"]) !!}
+								{!! Form::textarea('message', null, ["cols"=>"10", "rows"=>"5"], ['required']) !!}
 							</div><!-- //.col-md-12 -->
 						</div><!-- //.row -->		
 

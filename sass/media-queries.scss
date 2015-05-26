@@ -10,6 +10,11 @@
 
 @media (max-width: 1199px) {
 
+  footer#main-footer a.social-button {
+    width:41px;
+    height:41px;
+  }
+
   .white-container .timer-container a.button {
     font-size:18px;
     padding:20px 23px 19px;
@@ -59,6 +64,11 @@
 }
 
 @media (max-width: 991px) {
+
+  footer#main-footer a.social-button {
+    width:44px;
+    height:44px;
+  }  
 
   .g-map {
     margin-top:15px;
@@ -135,6 +145,41 @@
     text-align:center;
     padding-top:15px;
   }
+
+  #main-footer {
+
+    .social-container {
+
+      text-align:center;
+      display:block;
+      float:none;
+
+      a {
+
+        margin-left:1px !important;
+        margin-right:1px !important;
+
+      }
+
+    }
+
+    .footer-nav {
+      text-align:center;
+      padding-top:15px;
+    }
+
+  }
+
+  .bidvest {
+    width:100%;
+    margin-top:10px;
+
+    img {
+      display:block;
+      margin:0 auto 15px;
+    }
+
+  }  
 
 }
 
@@ -355,6 +400,10 @@
   }
 
   #banner {
+    display:none;
+  }
+
+  #comic-header.default {
     display:none;
   }
 
